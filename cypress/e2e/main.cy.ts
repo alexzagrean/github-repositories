@@ -1,8 +1,10 @@
 describe('Main flow', () => {
-  it('clicking "type" navigates to a new url', () => {
+  it('test navigation to repo and going back to home page', () => {
     cy.visit('http://localhost:3000/')
 
-    cy.get('.search-input').type('alexzagrean{enter}');
+    cy.get('.MuiInputBase-input').type('alexzagrean');
+
+    cy.getByData("search-input-option-0").click()
 
     cy.url().should('include', '/results?username=alexzagrean')
 

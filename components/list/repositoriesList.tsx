@@ -19,8 +19,8 @@ export default function RepositoriesList({ data, pageSize }: RepositoriesListPro
 
     return (
         <div className={styles.table}>
-            {data.slice(0, page * pageSize).map(row => (
-                <Link href={row.url} className={styles['card-wrapper']} target='_blank' key={row.name}>
+            {data.slice(0, page * pageSize).map((row, index) => (
+                <Link href={row.url} className={styles['card-wrapper']} target='_blank' key={row.name} data-test={`repository-list-item-${index}`}>
                     <div className={styles.card}>
                         <div className={styles.name}>{row.name}</div>
                         <div className={styles.stars}>
@@ -38,7 +38,7 @@ export default function RepositoriesList({ data, pageSize }: RepositoriesListPro
             ))
             }
             {data.length > page * pageSize &&
-                <div className={styles['load-more-button-wrapper']} onClick={handleClickOnMore}>
+                <div className={styles['load-more-button-wrapper']} onClick={handleClickOnMore} data-test="load-more-button">
                     <div className={styles['load-more-button']}>
                         Load more
                     </div>

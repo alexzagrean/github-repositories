@@ -67,8 +67,8 @@ const SearchAutocomplete = ({ inputValue, onChange, options, onOptionSelect, loa
                     }}
                 />
             )}
-            renderOption={(props, option) => (
-                <li {...props} key={option.username} className={`${props.className} ${styles.option}`}>
+            renderOption={(props, option, state) => (
+                <li {...props} key={option.username} className={`${props.className} ${styles.option} search-option`} data-test={`search-input-option-${state.index}`}>
                     {option.username}
                 </li>
             )}

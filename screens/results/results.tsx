@@ -60,8 +60,8 @@ export default function Results() {
                   <img src={user.photo} alt="Profile picture" />
                 </div>
                 <div className={styles['user-details']}>
-                  <div className={styles.name}>{user.name}</div>
-                  <Link className={styles['github-link']} href={user.url} target="_blank">
+                  <div className={styles.name} data-test="github-user-name">{user.name}</div>
+                  <Link className={styles['github-link']} href={user.url} target="_blank" data-test="see-github-page-link">
                     <LaunchIcon></LaunchIcon>
                     See github page
                   </Link>
