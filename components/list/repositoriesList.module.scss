@@ -1,0 +1,74 @@
+.table {
+  font-size: 24px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .card-wrapper {
+    background: rgb(8, 8, 250);
+    background: linear-gradient(90deg, rgba(8, 8, 250, 1) 0%, rgba(138, 77, 232, 1) 50%, rgba(0, 224, 122, 1) 100%);
+    border-radius: 16px;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+
+    .card {
+      display: flex;
+      background-color: #0C1117;
+      padding: 18px 32px;
+      border-radius: 16px;
+      align-items: center;
+      gap: 16px;
+      color: #fff;
+      transition: 0.3s;
+      flex: 1;
+
+      &:hover {
+        background-color: #2D2E34;
+      }
+
+      .name {
+        flex: 3;
+      }
+
+      .stars {
+        flex: 1;
+        font-size: 18px;
+      }
+
+      .forks {
+        flex: 1;
+        font-size: 18px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .load-more-button-wrapper {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+
+    .load-more-button {
+      border: 1px solid #2D2E34;
+      padding: 16px 32px;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #2D2E34;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+
+  .back-button {
+    display: flex;
+    font-size: 20px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .spinner-wrapper {
+    margin: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2vw;
+
+    .userWrapper {
+      flex: 1;
+      border-top-left-radius: 16px;
+      margin-bottom: 32px;
+      display: flex;
+
+      .user {
+        flex: 1;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+
+        .image-wrapper {
+          padding-left: 6px;
+          padding-top: 6px;
+          border-radius: 50%;
+          background: rgb(8, 8, 250);
+          background: linear-gradient(90deg, rgba(8, 8, 250, 1) 0%, rgba(138, 77, 232, 1) 50%, rgba(0, 224, 122, 1) 100%);
+          display: flex;
+          transform: rotate(-45deg);
+
+          img {
+            flex: 1;
+            border-radius: 50%;
+            width: 250px;
+            transform: rotate(45deg);
+            padding: 3px;
+            background: black;
+          }
+        }
+
+        .user-details {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .name {
+            font-size: 32px;
+            font-weight: 600;
+          }
+
+          .count {
+            font-size: 20px;
+          }
+
+          .github-link {
+            display: flex;
+            gap: 8px;
+            font-size: 18px;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+
+    .repoWrapper {
+      flex: 3;
+      border-top-right-radius: 16px;
+      padding: 48px 180px;
+
+      .header {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+
+        .repo-count {
+          border-radius: 16px;
+          background-color: #2A2B2D;
+          padding: 6px 10px;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        h2 {
+          margin-bottom: 32px;
+          font-size: 28px;
+          font-weight: 500;
+        }
+      }
+
+
+    }
+  }
+}

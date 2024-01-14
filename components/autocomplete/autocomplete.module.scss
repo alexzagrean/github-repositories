@@ -1,0 +1,12 @@
+.option {
+  font-size: 20px;
+  padding: 16px 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.autocomplete-message {
+  font-size: 20px;
+}
