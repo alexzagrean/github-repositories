@@ -72,3 +72,53 @@
     }
   }
 }
+
+
+@media screen and (max-width: 750px) {
+  .table {
+    .card-wrapper {
+      .card {
+        flex-direction: column;
+        .name {
+          flex: 3;
+          font-size: 20px;
+        }
+  
+        .stars {
+          flex: 1;
+          font-size: 16px;
+        }
+  
+        .forks {
+          flex: 1;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table {
+    .card-wrapper {
+      .card {
+        flex-direction: column;
+        .name {
+          flex: 3;
+          font-size: 20px;
+          text-align: center;
+        }
+  
+        .stars {
+          flex: 1;
+          font-size: 16px;
+        }
+  
+        .forks {
+          flex: 1;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

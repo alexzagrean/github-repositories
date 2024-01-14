@@ -1,0 +1,68 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("../../public/cover.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .input-wrapper {
+    margin: 64px;
+    width: 500px;
+
+    input {
+      width: 100%;
+      line-height: 2;
+      font-size: 24px;
+      padding: 0 16px;
+    }
+  }
+}
+
+.error-message {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    padding: 10vw;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .input-wrapper {
+      margin: 32px;
+      width: 100%;
+
+      input {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 20px;
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .content {
+    h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .input-wrapper {
+      input {
+        font-size: 16px;
+      }
+    }
+  }
+}

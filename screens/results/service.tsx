@@ -1,5 +1,5 @@
 import axios from "axios"
-import { USERS_PER_REQUEST } from "../../../utils/config";
+import { USERS_PER_REQUEST } from "../../utils/config";
 
 export const getRepositories = async (username: string) => {
     return (await axios.get(`https://api.github.com/users/${username}/repos`)).data

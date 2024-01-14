@@ -10,3 +10,24 @@
 .autocomplete-message {
   font-size: 20px;
 }
+
+
+@media screen and (max-width: 800px) {
+  .option {
+    font-size: 18px;
+  }
+
+  .autocomplete-message {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .option {
+    font-size: 14px;
+  }
+
+  .autocomplete-message {
+    font-size: 14px;
+  }
+}
