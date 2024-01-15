@@ -2,6 +2,11 @@
 
 Github account finder is a web application that allows users to easily find a user's account and see it's repositories.
 
+* Search for a github account (live results showing as you type)
+* Choose the account you're looking for
+* Check out the account and visit it's github page
+* Visit from the list of repositories what catches your eyes
+
 ## Demo link
 
 You can access the app at [https://alexzagrean.github.io/github-repositories/](https://alexzagrean.github.io/github-repositories/)
