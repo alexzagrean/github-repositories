@@ -36,7 +36,6 @@
       .user {
         flex: 1;
         display: flex;
-        color: #fff;
         align-items: center;
         justify-content: center;
         gap: 64px;
@@ -56,7 +55,7 @@
             width: 250px;
             transform: rotate(45deg);
             padding: 3px;
-            background: black;
+            background: rgb(var(--background-start-rgb));
           }
         }
 
@@ -100,6 +99,7 @@
           padding: 6px 10px;
           font-weight: bold;
           font-size: 18px;
+          color: white;
         }
 
         h2 {
@@ -113,8 +113,6 @@
     }
   }
 }
-
-
 
 @media screen and (max-width: 1200px) {
   .main {
@@ -143,19 +141,21 @@
   .main {
     .content {
       .repo-wrapper {
-        .header{
-          h2{
+        .header {
+          h2 {
             font-size: 24px;
           }
-          .repo-count{
+
+          .repo-count {
             font-size: 14px;
           }
         }
       }
-      .user-wrapper{
-        .user{
+
+      .user-wrapper {
+        .user {
           .image-wrapper {
-  
+
             img {
               width: 200px;
             }

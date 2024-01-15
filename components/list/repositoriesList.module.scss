@@ -16,17 +16,17 @@
 
     .card {
       display: flex;
-      background-color: #0C1117;
+      background-color: #F6F7F7;
       padding: 18px 32px;
       border-radius: 16px;
       align-items: center;
       gap: 16px;
-      color: #fff;
+      color: black;
       transition: 0.3s;
       flex: 1;
 
       &:hover {
-        background-color: #2D2E34;
+        background-color: #cccecf;
       }
 
       .name {
@@ -73,22 +73,37 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .table {
+    .card-wrapper {
+      .card {
+        background-color: #0C1117;
+        color: #fff;
+
+        &:hover {
+          background-color: #2D2E34;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 750px) {
   .table {
     .card-wrapper {
       .card {
         flex-direction: column;
+
         .name {
           flex: 3;
           font-size: 20px;
         }
-  
+
         .stars {
           flex: 1;
           font-size: 16px;
         }
-  
+
         .forks {
           flex: 1;
           font-size: 16px;
@@ -103,17 +118,18 @@
     .card-wrapper {
       .card {
         flex-direction: column;
+
         .name {
           flex: 3;
           font-size: 20px;
           text-align: center;
         }
-  
+
         .stars {
           flex: 1;
           font-size: 16px;
         }
-  
+
         .forks {
           flex: 1;
           font-size: 16px;
