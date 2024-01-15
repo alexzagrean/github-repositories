@@ -67,7 +67,7 @@
       cursor: pointer;
 
       &:hover {
-        background-color: #2D2E34;
+        background-color: #cccecf;
       }
     }
   }
@@ -80,6 +80,14 @@
         background-color: #0C1117;
         color: #fff;
 
+        &:hover {
+          background-color: #2D2E34;
+        }
+      }
+    }
+
+    .load-more-button-wrapper {
+      .load-more-button {
         &:hover {
           background-color: #2D2E34;
         }
