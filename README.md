@@ -1,4 +1,4 @@
-#Github account finder
+# Github account finder
 
 Github account finder is a web application that allows users to easily find a user's account and see it's repositories.
 
